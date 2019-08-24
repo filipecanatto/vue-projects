@@ -1,5 +1,5 @@
 <template>
-    <form>
+    <form v-on:submit.prevent="adicionarTarefa">
         <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Adicione uma tarefa" v-model='nomeTarefa'>
             <div class="input-group-append">
